@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		906BAEE31DF46CD10045E2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE21DF46CD10045E2E2 /* AppDelegate.swift */; };
+		906BAEE51DF46CD10045E2E2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE41DF46CD10045E2E2 /* FirstViewController.swift */; };
+		906BAEE71DF46CD10045E2E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE61DF46CD10045E2E2 /* SecondViewController.swift */; };
+		906BAEEA1DF46CD10045E2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906BAEE81DF46CD10045E2E2 /* Main.storyboard */; };
+		906BAEEC1DF46CD10045E2E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906BAEEB1DF46CD10045E2E2 /* Assets.xcassets */; };
+		906BAEEF1DF46CD10045E2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906BAEED1DF46CD10045E2E2 /* LaunchScreen.storyboard */; };
+		906BAEFA1DF46CD20045E2E2 /* ios_stethescopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEF91DF46CD20045E2E2 /* ios_stethescopeTests.swift */; };
+		906BAF051DF46CD20045E2E2 /* ios_stethescopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAF041DF46CD20045E2E2 /* ios_stethescopeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		906BAEF61DF46CD20045E2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 906BAED71DF46CD10045E2E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 906BAEDE1DF46CD10045E2E2;
+			remoteInfo = "ios-stethescope";
+		};
+		906BAF011DF46CD20045E2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 906BAED71DF46CD10045E2E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 906BAEDE1DF46CD10045E2E2;
+			remoteInfo = "ios-stethescope";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		906BAEDF1DF46CD10045E2E2 /* ios-stethescope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-stethescope.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906BAEE21DF46CD10045E2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		906BAEE41DF46CD10045E2E2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		906BAEE61DF46CD10045E2E2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		906BAEE91DF46CD10045E2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		906BAEEB1DF46CD10045E2E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		906BAEEE1DF46CD10045E2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		906BAEF01DF46CD10045E2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		906BAEF51DF46CD20045E2E2 /* ios-stethescopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-stethescopeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906BAEF91DF46CD20045E2E2 /* ios_stethescopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_stethescopeTests.swift; sourceTree = "<group>"; };
+		906BAEFB1DF46CD20045E2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		906BAF001DF46CD20045E2E2 /* ios-stethescopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-stethescopeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906BAF041DF46CD20045E2E2 /* ios_stethescopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_stethescopeUITests.swift; sourceTree = "<group>"; };
+		906BAF061DF46CD20045E2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		906BAEDC1DF46CD10045E2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906BAEF21DF46CD20045E2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906BAEFD1DF46CD20045E2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		906BAED61DF46CD10045E2E2 = {
+			isa = PBXGroup;
+			children = (
+				906BAEE11DF46CD10045E2E2 /* ios-stethescope */,
+				906BAEF81DF46CD20045E2E2 /* ios-stethescopeTests */,
+				906BAF031DF46CD20045E2E2 /* ios-stethescopeUITests */,
+				906BAEE01DF46CD10045E2E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		906BAEE01DF46CD10045E2E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				906BAEDF1DF46CD10045E2E2 /* ios-stethescope.app */,
+				906BAEF51DF46CD20045E2E2 /* ios-stethescopeTests.xctest */,
+				906BAF001DF46CD20045E2E2 /* ios-stethescopeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		906BAEE11DF46CD10045E2E2 /* ios-stethescope */ = {
+			isa = PBXGroup;
+			children = (
+				906BAEE21DF46CD10045E2E2 /* AppDelegate.swift */,
+				906BAEE41DF46CD10045E2E2 /* FirstViewController.swift */,
+				906BAEE61DF46CD10045E2E2 /* SecondViewController.swift */,
+				906BAEE81DF46CD10045E2E2 /* Main.storyboard */,
+				906BAEEB1DF46CD10045E2E2 /* Assets.xcassets */,
+				906BAEED1DF46CD10045E2E2 /* LaunchScreen.storyboard */,
+				906BAEF01DF46CD10045E2E2 /* Info.plist */,
+			);
+			path = "ios-stethescope";
+			sourceTree = "<group>";
+		};
+		906BAEF81DF46CD20045E2E2 /* ios-stethescopeTests */ = {
+			isa = PBXGroup;
+			children = (
+				906BAEF91DF46CD20045E2E2 /* ios_stethescopeTests.swift */,
+				906BAEFB1DF46CD20045E2E2 /* Info.plist */,
+			);
+			path = "ios-stethescopeTests";
+			sourceTree = "<group>";
+		};
+		906BAF031DF46CD20045E2E2 /* ios-stethescopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				906BAF041DF46CD20045E2E2 /* ios_stethescopeUITests.swift */,
+				906BAF061DF46CD20045E2E2 /* Info.plist */,
+			);
+			path = "ios-stethescopeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		906BAEDE1DF46CD10045E2E2 /* ios-stethescope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 906BAF091DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescope" */;
+			buildPhases = (
+				906BAEDB1DF46CD10045E2E2 /* Sources */,
+				906BAEDC1DF46CD10045E2E2 /* Frameworks */,
+				906BAEDD1DF46CD10045E2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-stethescope";
+			productName = "ios-stethescope";
+			productReference = 906BAEDF1DF46CD10045E2E2 /* ios-stethescope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		906BAEF41DF46CD20045E2E2 /* ios-stethescopeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 906BAF0C1DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescopeTests" */;
+			buildPhases = (
+				906BAEF11DF46CD20045E2E2 /* Sources */,
+				906BAEF21DF46CD20045E2E2 /* Frameworks */,
+				906BAEF31DF46CD20045E2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				906BAEF71DF46CD20045E2E2 /* PBXTargetDependency */,
+			);
+			name = "ios-stethescopeTests";
+			productName = "ios-stethescopeTests";
+			productReference = 906BAEF51DF46CD20045E2E2 /* ios-stethescopeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		906BAEFF1DF46CD20045E2E2 /* ios-stethescopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 906BAF0F1DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescopeUITests" */;
+			buildPhases = (
+				906BAEFC1DF46CD20045E2E2 /* Sources */,
+				906BAEFD1DF46CD20045E2E2 /* Frameworks */,
+				906BAEFE1DF46CD20045E2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				906BAF021DF46CD20045E2E2 /* PBXTargetDependency */,
+			);
+			name = "ios-stethescopeUITests";
+			productName = "ios-stethescopeUITests";
+			productReference = 906BAF001DF46CD20045E2E2 /* ios-stethescopeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		906BAED71DF46CD10045E2E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ram Bhaskar";
+				TargetAttributes = {
+					906BAEDE1DF46CD10045E2E2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					906BAEF41DF46CD20045E2E2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 906BAEDE1DF46CD10045E2E2;
+					};
+					906BAEFF1DF46CD20045E2E2 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 906BAEDE1DF46CD10045E2E2;
+					};
+				};
+			};
+			buildConfigurationList = 906BAEDA1DF46CD10045E2E2 /* Build configuration list for PBXProject "ios-stethescope" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 906BAED61DF46CD10045E2E2;
+			productRefGroup = 906BAEE01DF46CD10045E2E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				906BAEDE1DF46CD10045E2E2 /* ios-stethescope */,
+				906BAEF41DF46CD20045E2E2 /* ios-stethescopeTests */,
+				906BAEFF1DF46CD20045E2E2 /* ios-stethescopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		906BAEDD1DF46CD10045E2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906BAEEF1DF46CD10045E2E2 /* LaunchScreen.storyboard in Resources */,
+				906BAEEC1DF46CD10045E2E2 /* Assets.xcassets in Resources */,
+				906BAEEA1DF46CD10045E2E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906BAEF31DF46CD20045E2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906BAEFE1DF46CD20045E2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		906BAEDB1DF46CD10045E2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906BAEE71DF46CD10045E2E2 /* SecondViewController.swift in Sources */,
+				906BAEE31DF46CD10045E2E2 /* AppDelegate.swift in Sources */,
+				906BAEE51DF46CD10045E2E2 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906BAEF11DF46CD20045E2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906BAEFA1DF46CD20045E2E2 /* ios_stethescopeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		906BAEFC1DF46CD20045E2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906BAF051DF46CD20045E2E2 /* ios_stethescopeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		906BAEF71DF46CD20045E2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 906BAEDE1DF46CD10045E2E2 /* ios-stethescope */;
+			targetProxy = 906BAEF61DF46CD20045E2E2 /* PBXContainerItemProxy */;
+		};
+		906BAF021DF46CD20045E2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 906BAEDE1DF46CD10045E2E2 /* ios-stethescope */;
+			targetProxy = 906BAF011DF46CD20045E2E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		906BAEE81DF46CD10045E2E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				906BAEE91DF46CD10045E2E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		906BAEED1DF46CD10045E2E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				906BAEEE1DF46CD10045E2E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		906BAF071DF46CD20045E2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		906BAF081DF46CD20045E2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		906BAF0A1DF46CD20045E2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ios-stethescope/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ram.test.ios-stethescope";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		906BAF0B1DF46CD20045E2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ios-stethescope/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ram.test.ios-stethescope";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		906BAF0D1DF46CD20045E2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "ios-stethescopeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ram.test.ios-stethescopeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-stethescope.app/ios-stethescope";
+			};
+			name = Debug;
+		};
+		906BAF0E1DF46CD20045E2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "ios-stethescopeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ram.test.ios-stethescopeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-stethescope.app/ios-stethescope";
+			};
+			name = Release;
+		};
+		906BAF101DF46CD20045E2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "ios-stethescopeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ram.test.ios-stethescopeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "ios-stethescope";
+			};
+			name = Debug;
+		};
+		906BAF111DF46CD20045E2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "ios-stethescopeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ram.test.ios-stethescopeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "ios-stethescope";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		906BAEDA1DF46CD10045E2E2 /* Build configuration list for PBXProject "ios-stethescope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906BAF071DF46CD20045E2E2 /* Debug */,
+				906BAF081DF46CD20045E2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		906BAF091DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906BAF0A1DF46CD20045E2E2 /* Debug */,
+				906BAF0B1DF46CD20045E2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		906BAF0C1DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescopeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906BAF0D1DF46CD20045E2E2 /* Debug */,
+				906BAF0E1DF46CD20045E2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		906BAF0F1DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				906BAF101DF46CD20045E2E2 /* Debug */,
+				906BAF111DF46CD20045E2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 906BAED71DF46CD10045E2E2 /* Project object */;
+}

@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		906BAEE31DF46CD10045E2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE21DF46CD10045E2E2 /* AppDelegate.swift */; };
-		906BAEE51DF46CD10045E2E2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE41DF46CD10045E2E2 /* FirstViewController.swift */; };
+		906BAEE51DF46CD10045E2E2 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE41DF46CD10045E2E2 /* RecorderViewController.swift */; };
 		906BAEE71DF46CD10045E2E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE61DF46CD10045E2E2 /* SecondViewController.swift */; };
 		906BAEEA1DF46CD10045E2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906BAEE81DF46CD10045E2E2 /* Main.storyboard */; };
 		906BAEEC1DF46CD10045E2E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 906BAEEB1DF46CD10045E2E2 /* Assets.xcassets */; };
 		906BAEEF1DF46CD10045E2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 906BAEED1DF46CD10045E2E2 /* LaunchScreen.storyboard */; };
 		906BAEFA1DF46CD20045E2E2 /* ios_stethescopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEF91DF46CD20045E2E2 /* ios_stethescopeTests.swift */; };
 		906BAF051DF46CD20045E2E2 /* ios_stethescopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAF041DF46CD20045E2E2 /* ios_stethescopeUITests.swift */; };
+		906BAF131DF498F40045E2E2 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAF121DF498F40045E2E2 /* PlaySoundViewController.swift */; };
+		906BAF171DF4F70E0045E2E2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 906BAF161DF4F70E0045E2E2 /* Podfile */; };
+		906BAF1B1DF5AA750045E2E2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAF1A1DF5AA750045E2E2 /* ProfileViewController.swift */; };
+		B676F492F32529E9E553D3BF /* Pods_ios_stethescope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F98FACD4679221068B4638 /* Pods_ios_stethescope.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3436DED1927CB06484C65EB6 /* Pods-ios-stethescope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-stethescope.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-stethescope/Pods-ios-stethescope.release.xcconfig"; sourceTree = "<group>"; };
+		345101C590F0FCC4C4E162AF /* Pods-ios-stethescope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-stethescope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-stethescope/Pods-ios-stethescope.debug.xcconfig"; sourceTree = "<group>"; };
 		906BAEDF1DF46CD10045E2E2 /* ios-stethescope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-stethescope.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		906BAEE21DF46CD10045E2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		906BAEE41DF46CD10045E2E2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		906BAEE41DF46CD10045E2E2 /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 		906BAEE61DF46CD10045E2E2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		906BAEE91DF46CD10045E2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		906BAEEB1DF46CD10045E2E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		906BAF001DF46CD20045E2E2 /* ios-stethescopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-stethescopeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		906BAF041DF46CD20045E2E2 /* ios_stethescopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_stethescopeUITests.swift; sourceTree = "<group>"; };
 		906BAF061DF46CD20045E2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		906BAF121DF498F40045E2E2 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundViewController.swift; sourceTree = "<group>"; };
+		906BAF161DF4F70E0045E2E2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		906BAF1A1DF5AA750045E2E2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C0F98FACD4679221068B4638 /* Pods_ios_stethescope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_stethescope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B676F492F32529E9E553D3BF /* Pods_ios_stethescope.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +87,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C49F7CD7B37A58368998D2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0F98FACD4679221068B4638 /* Pods_ios_stethescope.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67F1D590901BA9B10643BFA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				345101C590F0FCC4C4E162AF /* Pods-ios-stethescope.debug.xcconfig */,
+				3436DED1927CB06484C65EB6 /* Pods-ios-stethescope.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		906BAED61DF46CD10045E2E2 = {
 			isa = PBXGroup;
 			children = (
+				906BAF161DF4F70E0045E2E2 /* Podfile */,
 				906BAEE11DF46CD10045E2E2 /* ios-stethescope */,
 				906BAEF81DF46CD20045E2E2 /* ios-stethescopeTests */,
 				906BAF031DF46CD20045E2E2 /* ios-stethescopeUITests */,
 				906BAEE01DF46CD10045E2E2 /* Products */,
+				67F1D590901BA9B10643BFA6 /* Pods */,
+				5C49F7CD7B37A58368998D2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				906BAEE21DF46CD10045E2E2 /* AppDelegate.swift */,
-				906BAEE41DF46CD10045E2E2 /* FirstViewController.swift */,
+				906BAEE41DF46CD10045E2E2 /* RecorderViewController.swift */,
 				906BAEE61DF46CD10045E2E2 /* SecondViewController.swift */,
+				906BAF121DF498F40045E2E2 /* PlaySoundViewController.swift */,
+				906BAF1A1DF5AA750045E2E2 /* ProfileViewController.swift */,
 				906BAEE81DF46CD10045E2E2 /* Main.storyboard */,
 				906BAEEB1DF46CD10045E2E2 /* Assets.xcassets */,
 				906BAEED1DF46CD10045E2E2 /* LaunchScreen.storyboard */,
@@ -135,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 906BAF091DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescope" */;
 			buildPhases = (
+				321908318FAECE4745ED37BF /* [CP] Check Pods Manifest.lock */,
 				906BAEDB1DF46CD10045E2E2 /* Sources */,
 				906BAEDC1DF46CD10045E2E2 /* Frameworks */,
 				906BAEDD1DF46CD10045E2E2 /* Resources */,
+				D6F263A09845D3F0A3955E9C /* [CP] Embed Pods Frameworks */,
+				D1F072424626514243631BFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +273,7 @@
 			files = (
 				906BAEEF1DF46CD10045E2E2 /* LaunchScreen.storyboard in Resources */,
 				906BAEEC1DF46CD10045E2E2 /* Assets.xcassets in Resources */,
+				906BAF171DF4F70E0045E2E2 /* Podfile in Resources */,
 				906BAEEA1DF46CD10045E2E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +294,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		321908318FAECE4745ED37BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F072424626514243631BFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-stethescope/Pods-ios-stethescope-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F263A09845D3F0A3955E9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-stethescope/Pods-ios-stethescope-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		906BAEDB1DF46CD10045E2E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +349,9 @@
 			files = (
 				906BAEE71DF46CD10045E2E2 /* SecondViewController.swift in Sources */,
 				906BAEE31DF46CD10045E2E2 /* AppDelegate.swift in Sources */,
-				906BAEE51DF46CD10045E2E2 /* FirstViewController.swift in Sources */,
+				906BAF1B1DF5AA750045E2E2 /* ProfileViewController.swift in Sources */,
+				906BAF131DF498F40045E2E2 /* PlaySoundViewController.swift in Sources */,
+				906BAEE51DF46CD10045E2E2 /* RecorderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +501,7 @@
 		};
 		906BAF0A1DF46CD20045E2E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345101C590F0FCC4C4E162AF /* Pods-ios-stethescope.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-stethescope/Info.plist";
@@ -426,6 +514,7 @@
 		};
 		906BAF0B1DF46CD20045E2E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3436DED1927CB06484C65EB6 /* Pods-ios-stethescope.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-stethescope/Info.plist";
@@ -509,6 +598,7 @@
 				906BAF0B1DF46CD20045E2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		906BAF0C1DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescopeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +607,7 @@
 				906BAF0E1DF46CD20045E2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		906BAF0F1DF46CD20045E2E2 /* Build configuration list for PBXNativeTarget "ios-stethescopeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +616,7 @@
 				906BAF111DF46CD20045E2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

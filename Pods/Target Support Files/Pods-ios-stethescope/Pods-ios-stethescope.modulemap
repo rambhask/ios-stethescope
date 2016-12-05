@@ -1,0 +1,6 @@
+framework module Pods_ios_stethescope {
+  umbrella header "Pods-ios-stethescope-umbrella.h"
+
+  export *
+  module * { export * }
+}

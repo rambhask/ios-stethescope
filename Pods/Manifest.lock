@@ -1,3 +1,19 @@
-PODFILE CHECKSUM: 0d4b1964b3a7610a9f0ffc7cf411f15c51797eb9
+PODS:
+  - EZAudio (1.1.5):
+    - EZAudio/Full (= 1.1.5)
+  - EZAudio/Core (1.1.5)
+  - EZAudio/Full (1.1.5):
+    - EZAudio/Core
+    - TPCircularBuffer (= 1.1)
+  - TPCircularBuffer (1.1)
+
+DEPENDENCIES:
+  - EZAudio
+
+SPEC CHECKSUMS:
+  EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
+  TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
+
+PODFILE CHECKSUM: cc824412b52bfdb833937084d99de2f315420215
 
 COCOAPODS: 1.0.1

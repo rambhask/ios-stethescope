@@ -1,4 +1,5 @@
 PODS:
+  - AudioKit (3.6)
   - EZAudio (1.1.5):
     - EZAudio/Full (= 1.1.5)
   - EZAudio/Core (1.1.5)
@@ -8,12 +9,14 @@ PODS:
   - TPCircularBuffer (1.1)
 
 DEPENDENCIES:
+  - AudioKit (~> 3.5)
   - EZAudio
 
 SPEC CHECKSUMS:
+  AudioKit: 7823de92f3c9570178d2347042867b6a93be1464
   EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
   TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
 
-PODFILE CHECKSUM: cc824412b52bfdb833937084d99de2f315420215
+PODFILE CHECKSUM: 8d18c418e6f664e757a9d6378aa10385886da70e
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0

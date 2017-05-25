@@ -87,19 +87,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         // Row selected - play file
         let audioFile = self.recordedFileList[indexPath.row]
         print(audioFile)
-//        let player = AudioPlayerVC(nibName: "AudioPlayerVC", bundle: nil)
-//        player.audioFile = self.recordedFileList[indexPath.row]
-//        
-//        self.present(AudioPlayerVC, animated: true, completion: nil)
-        //self.navigationController?.pushViewController(player, animated: true)
+
         
        self.performSegue(withIdentifier: "playAudio", sender: audioFile)
-//        let player = AudioPlayerVC(nibName: "AudioPlayerVC", bundle: nil)
-//        player.audioFile = (self.recordedFileList[indexPath.row] as? String)!
-        
-        print("something has been clicked fuckers")
-        //print("Testing click", player.audioFile, " - ", indexPath.row)
-        //self.navigationController?.pushViewController(player, animated: true)
     }
 
 

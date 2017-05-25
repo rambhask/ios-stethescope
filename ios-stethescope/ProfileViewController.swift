@@ -8,84 +8,91 @@
 
 import Foundation
 import UIKit
-import EZAudio
+import AudioKit
 
-class ProfileViewController: UIViewController, EZMicrophoneDelegate, EZAudioFFTDelegate {
-    var audioPlotTime: EZAudioPlot!
-    var maxFrequencyLabel: UILabel!
-    var audioPlotFreq: EZAudioPlot!
-    var microphone: EZMicrophone!
-    var fft: EZAudioFFTRolling!
+class ProfileViewController: UIViewController {
+
     
+    @IBOutlet weak var startRecording: UIButton!
+    @IBOutlet weak var stop: UIButton!
     
-    
-    
+    let mic = AKMicrophone()
+    var tracker : AKFrequencyTracker!
+    var tape : AKAudioFile!
+    var recorder : AKNodeRecorder!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Profile"
-        let session = AVAudioSession.sharedInstance()
-        do {
-            try session.setCategory("", mode: AVAudioSessionCategoryPlayAndRecord)
-        }
-        catch {
-            print("blah")
-        }
-        do {
-            try session.setActive(true)
-        } catch {
-            print("blah")
-        }
-        
-        //
-        // Setup time domain audio plot
-        //
-        
-        self.audioPlotTime.plotType = EZPlotType.buffer
-        self.maxFrequencyLabel.numberOfLines = 0
-        
-        //
-        // Setup frequency domain audio plot
-        //
-        self.audioPlotFreq.shouldFill = true
-        self.audioPlotFreq.plotType = EZPlotType.buffer
-        self.audioPlotFreq.shouldCenterYAxis = false
-        
-        //
-        // Create an instance of the microphone and tell it to use this view controller instance as the delegate
-        //
-        self.microphone = EZMicrophone.init(microphoneDelegate: self)
-        
-        self.fft = EZAudioFFTRolling.fft(withWindowSize: 4096, historyBufferSize: 100, sampleRate: Float(self.microphone.audioStreamBasicDescription().mSampleRate), delegate: self)
         
         
-        self.microphone.startFetchingAudio()
+        tracker = AKFrequencyTracker.init(mic, hopSize: 200, peakCount: 2000)
+        let silence = AKBooster(tracker, gain: 0)
+        AudioKit.output = silence
+        
+//        tape = try AKAudioFile()
+//        
+//        recorder = try AKNodeRecorder(node: mic, file: tape)
+//        
+//        try recorder.stop()
+        
         
     }
     
-    //EZMicrophoneDelegate
-    
-    func microphone(_ microphone: EZMicrophone!, hasAudioReceived buffer: UnsafeMutablePointer<UnsafeMutablePointer<Float>?>!, withBufferSize bufferSize: UInt32, withNumberOfChannels numberOfChannels: UInt32) {
-        //
-        // Calculate the FFT, will trigger EZAudioFFTDelegate
-        //
-        self.fft.computeFFT(withBuffer: buffer[0], withBufferSize: bufferSize)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-        DispatchQueue.main.async {
-            self.audioPlotTime.updateBuffer(buffer[0], withBufferSize: bufferSize)
-        }
+        self.setupPlot()
+    }
+    @IBOutlet weak var audioInputPlot: EZAudioPlot!
+    
+    func setupPlot() {
+        let plot = AKNodeOutputPlot(mic, frame: audioInputPlot.bounds)
+        plot.plotType = .rolling
+        plot.shouldFill = true
+        plot.shouldMirror = true
+        plot.color = UIColor.blue
+        audioInputPlot.addSubview(plot)
     }
     
-    //EZAudioFFTDelegate
+    @IBAction func start(_ sender: Any) {
+        AudioKit.start()
+    }
     
-    func fft(_ fft: EZAudioFFT!, updatedWithFFTData fftData: UnsafeMutablePointer<Float>!, bufferSize: vDSP_Length) {
-        let maxFrequency = fft.maxFrequency
-        let noteName = EZAudioUtilities.noteNameString(forFrequency: maxFrequency, includeOctave: true)
-        
-        DispatchQueue.main.async {
-            self.maxFrequencyLabel.text = String(format: "Highest Note: %@, \n Frequency: %.2f", noteName!, maxFrequency)
-            self.audioPlotFreq.updateBuffer(fftData, withBufferSize: UInt32(bufferSize))
+    
+    @IBAction func stopRecording(_ sender: Any) {
+        AudioKit.stop()
+    }
+    
+    
+    func updateUI() {
+        /*
+        if tracker.amplitude > 0.1 {
+            frequencyLabel.text = String(format: "%0.1f", tracker.frequency)
+            
+            var frequency = Float(tracker.frequency)
+            while (frequency > Float(noteFrequencies[noteFrequencies.count-1])) {
+                frequency = frequency / 2.0
+            }
+            while (frequency < Float(noteFrequencies[0])) {
+                frequency = frequency * 2.0
+            }
+            
+            var minDistance: Float = 10000.0
+            var index = 0
+            
+            for i in 0..<noteFrequencies.count {
+                let distance = fabsf(Float(noteFrequencies[i]) - frequency)
+                if (distance < minDistance){
+                    index = i
+                    minDistance = distance
+                }
+            }
+            let octave = Int(log2f(Float(tracker.frequency) / frequency))
+            noteNameWithSharpsLabel.text = "\(noteNamesWithSharps[index])\(octave)"
+            noteNameWithFlatsLabel.text = "\(noteNamesWithFlats[index])\(octave)"
         }
-        
+        amplitudeLabel.text = String(format: "%0.2f", tracker.amplitude)
+ */
     }
     
 }

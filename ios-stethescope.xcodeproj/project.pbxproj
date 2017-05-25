@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		900E24C91ED6145D0063F1F2 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900E24C81ED6145D0063F1F2 /* AudioKit.framework */; };
+		900E24CA1ED6145D0063F1F2 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 900E24C81ED6145D0063F1F2 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		906BAEE31DF46CD10045E2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE21DF46CD10045E2E2 /* AppDelegate.swift */; };
 		906BAEE51DF46CD10045E2E2 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE41DF46CD10045E2E2 /* RecorderViewController.swift */; };
 		906BAEE71DF46CD10045E2E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906BAEE61DF46CD10045E2E2 /* SecondViewController.swift */; };
@@ -38,9 +40,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		900E24CB1ED6145D0063F1F2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				900E24CA1ED6145D0063F1F2 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3436DED1927CB06484C65EB6 /* Pods-ios-stethescope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-stethescope.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-stethescope/Pods-ios-stethescope.release.xcconfig"; sourceTree = "<group>"; };
 		345101C590F0FCC4C4E162AF /* Pods-ios-stethescope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-stethescope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-stethescope/Pods-ios-stethescope.debug.xcconfig"; sourceTree = "<group>"; };
+		900E24C81ED6145D0063F1F2 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "../Downloads/AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
 		906BAEDF1DF46CD10045E2E2 /* ios-stethescope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-stethescope.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		906BAEE21DF46CD10045E2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		906BAEE41DF46CD10045E2E2 /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900E24C91ED6145D0063F1F2 /* AudioKit.framework in Frameworks */,
 				B676F492F32529E9E553D3BF /* Pods_ios_stethescope.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +125,7 @@
 		906BAED61DF46CD10045E2E2 = {
 			isa = PBXGroup;
 			children = (
+				900E24C81ED6145D0063F1F2 /* AudioKit.framework */,
 				906BAF161DF4F70E0045E2E2 /* Podfile */,
 				906BAEE11DF46CD10045E2E2 /* ios-stethescope */,
 				906BAEF81DF46CD20045E2E2 /* ios-stethescopeTests */,
@@ -174,6 +193,7 @@
 				906BAEDD1DF46CD10045E2E2 /* Resources */,
 				D6F263A09845D3F0A3955E9C /* [CP] Embed Pods Frameworks */,
 				D1F072424626514243631BFC /* [CP] Copy Pods Resources */,
+				900E24CB1ED6145D0063F1F2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,7 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D1F072424626514243631BFC /* [CP] Copy Pods Resources */ = {

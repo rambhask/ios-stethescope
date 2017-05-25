@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "220C1612E7FB418D1BE35E91D3DE863D"
+               BlueprintIdentifier = "9EBCF382F9C86BAC22E259ED5EFFED46"
                BuildableName = "Pods_ios_stethescope.framework"
                BlueprintName = "Pods-ios-stethescope"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "220C1612E7FB418D1BE35E91D3DE863D"
+            BlueprintIdentifier = "9EBCF382F9C86BAC22E259ED5EFFED46"
             BuildableName = "Pods_ios_stethescope.framework"
             BlueprintName = "Pods-ios-stethescope"
             ReferencedContainer = "container:Pods.xcodeproj">

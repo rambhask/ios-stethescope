@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AudioKit
 
 class RecorderVC: UIViewController, AVAudioRecorderDelegate {
 
@@ -19,15 +20,25 @@ class RecorderVC: UIViewController, AVAudioRecorderDelegate {
     var audioRecorder: AVAudioRecorder!
     
     var meterTimer:Timer!
-    @IBOutlet weak var statusLabel: UILabel!
-
     
+    let mic = AKMicrophone()
+    var tracker : AKFrequencyTracker!
+    
+    @IBOutlet weak var statusLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tracker = AKFrequencyTracker.init(mic, hopSize: 200, peakCount: 2000)
+        let silence = AKBooster(tracker, gain: 0)
+        AudioKit.output = silence
         recordedFileList = getRecordedFileList();
         print(recordedFileList);
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.setupPlot()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,25 +46,41 @@ class RecorderVC: UIViewController, AVAudioRecorderDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func setupPlot() {
+        let plot = AKNodeOutputPlot(mic, frame: audioPlot.bounds)
+        plot.plotType = .rolling
+        plot.shouldFill = true
+        plot.shouldMirror = true
+        plot.color = UIColor.blue
+        audioPlot.addSubview(plot)
+    }
+    
+    @IBOutlet weak var audioPlot: EZAudioPlot!
+    @IBAction func testRecording(_ sender: Any) {
+        AudioKit.start()
+    }
     @IBAction func startRecording(_ sender: Any) {
         print("Audio Recording started")
+        AudioKit.start()
         recordButton.isEnabled = false
         
-        stopRecordingButton.isEnabled = true;
         
+        stopRecordingButton.isEnabled = true;
+        /*
         if audioRecorder == nil {
             print("recording. recorder nil")
             recordWithPermission(setup: true)
         } else {
             recordWithPermission(setup: true)
         }
+ */
     }
 
     @IBAction func stopRecording(_ sender: Any) {
         print("Audio Recording finished")
+        AudioKit.stop()
         recordButton.setTitle("Start Recording", for: .normal)
         recordButton.isEnabled = true
-        
         stopRecordingButton.isEnabled = false;
         
         
@@ -166,6 +193,8 @@ class RecorderVC: UIViewController, AVAudioRecorderDelegate {
 
     
     // MARK:  Utility functions
+    
+
 
     func getDocumentsDirectory() -> String {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
